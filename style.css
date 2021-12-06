@@ -146,14 +146,3 @@ body{
     border-radius: 12px;
 }
 
-.feed-container{
-    position: absolute;
-    height: 100%;
-    width: calc(100% - 290px);
-    left: 272px;
-    background: #fff;
-    border-radius: 10px 10px 10px 10px;
-    top: 1rem;
-    height: calc(100% - 2em);
-}
-
