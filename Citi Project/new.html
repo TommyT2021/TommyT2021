@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>REDDI</title>
+</head>
+
+<body>
+    <div class="side">
+        <div class="citi_content">
+            <div class="citi">
+                <h2><img src="{{ url_for('static', filename='css/citi.svg.png') }}" width="40px" alt="">Ventures</h2>
+            </div>
+            <i>
+            <span class="material-icons" id="btn">menu</span>
+            </i>
+        </div> 
+        <ul class="side_list">
+            <li>
+                <a href="#">
+                    <span class="material-icons">home</span>
+                    <span class="material-name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-icons">assessment</span>
+                    <span class="material-name">Analytics</span>
+                </a>
+            </li>            
+            <li>
+                <a href="#">
+                    <span class="material-icons">event</span>
+                    <span class="material-name">Events</span>
+                </a>
+            </li>            
+            <li>
+                <a href="#">
+                    <span class="material-icons">bookmarks</span>
+                    <span class="material-name">Bookmarks</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-icons">settings</span>
+                    <span class="material-name">Settings</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class ="profile">
+                <div class="profile_details">
+                    <img src="{{ url_for('static', filename='css/icon_cropped.png') }}" alt="">
+                <div class="name_job">
+                    <div class="name">Tommy Truong</div>
+                    <div class="job">Administrator</div>
+                </div>
+                </div>
+                <span class="material-icons" id="log_out">logout</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">  
+        <div class="list">
+            <!-- set 1 -->
+
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link1}}">{{title1}}</a>
+                <div class="description">{{description1}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link2}}">{{title2}}</a>
+                <div class="description">{{description2}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link3}}">{{title3}}</a>
+                <div class="description">{{description3}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link4}}">{{title4}}</a>
+                <div class="description">{{description4}}</div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link5}}">{{title5}}</a>
+                <div class="description">{{description5}} </div>
+            </div>
+
+            <!-- set 2 -->
+
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link6}}">{{title6}}</a>
+                <div class="description">{{description6}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link7}}">{{title7}}</a>
+                <div class="description">{{description7}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link8}}">{{title8}}</a>
+                <div class="description">{{description8}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link9}}">{{title9}}</a>
+                <div class="description">{{description9}}</div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link10}}">{{title10}}</a>
+                <div class="description">{{description10}} </div>
+            </div>
+
+            <!-- set 3 -->
+
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link11}}">{{title11}}</a>
+                <div class="description">{{description11}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link12}}">{{title12}}</a>
+                <div class="description">{{description12}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link13}}">{{title13}}</a>
+                <div class="description">{{description13}} </div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link14}}">{{title14}}</a>
+                <div class="description">{{description14}}</div>
+            </div>
+            <div class="single-card">
+                <div class="sector">Sector: Financial/Technology</div>
+                <a class="title" href="{{link15}}">{{title15}}</a>
+                <div class="description">{{description15}} </div>
+            </div>
+
+        </div>  
+    </div>
+
+    <script>
+    let btn = document.querySelector("#btn");
+    let side = document.querySelector(".side");
+    
+    btn.onclick = function() {
+        side.classList.toggle("active");
+    }
+
+
+    </script>
+
+</body>
+</html>
